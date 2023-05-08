@@ -1,0 +1,5 @@
+cc_binary(
+    name = "program",
+    srcs = ["program.cc"],
+    visibility = ["//visibility:public"],
+)

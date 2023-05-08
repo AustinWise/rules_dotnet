@@ -144,7 +144,7 @@ COMMON_ATTRS = {
         allow_single_file = True,
     ),
     "_compiler_wrapper_bat": attr.label(
-        default = "@rules_dotnet//dotnet/private:compiler_wrapper.bat",
+        default = "@rules_dotnet//tools/compiler_wrapper:program",
         executable = True,
         cfg = "exec",
         allow_single_file = True,
