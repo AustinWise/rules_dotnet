@@ -138,7 +138,7 @@ COMMON_ATTRS = {
         default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
     ),
     "_compiler_wrapper_sh": attr.label(
-        default = "@rules_dotnet//dotnet/private:compiler_wrapper.sh",
+        default = "@rules_dotnet//dotnet/private:CscPersistentWorker",
         executable = True,
         cfg = "exec",
         allow_single_file = True,
