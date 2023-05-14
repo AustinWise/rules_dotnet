@@ -139,6 +139,11 @@ static int runOneCompilation(std::vector<string_t> args)
     return exitCode;
 }
 
+void runPersistentWorker(std::vector<string_t> args)
+{
+
+}
+
 #if defined(_WIN32)
 int __cdecl wmain(const int argc, const char_t *argv[])
 #else
@@ -165,8 +170,8 @@ int main(const int argc, const char_t *argv[])
 
     if (isPersistentWorker)
     {
-        std::cerr << "--persistent_worker not yet implemented." << std::endl;
-        return 1;
+        runPersistentWorker(args);
+        return 0;
     }
     else
     {

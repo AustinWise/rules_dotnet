@@ -421,4 +421,5 @@ def _compile(
             # ICU should not be required during compliation but only at runtime
             "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT": "1",
         },
+        # execution_requirements={"supports-workers" : "1"},
     )
