@@ -6,6 +6,7 @@ exports_files(
         "launcher.bat.tpl",
         "compiler_wrapper.sh",
         "compiler_wrapper.bat",
+        "CscPersistentWorker.exe",
     ],
     visibility = ["//visibility:public"],
 )
